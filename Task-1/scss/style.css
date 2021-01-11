@@ -1,1 +1,122 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 100px;
+  width: 500px;
+  height: 500px;
+  border-radius: 5px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#86c4ec), color-stop(80%, #3366ff));
+  background: linear-gradient(to bottom, #86c4ec 0%, #3366ff 80%);
+}
+
+.subBox_main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 350px;
+  width: 300px;
+  margin-top: 75px;
+  border-radius: 5px;
+  -webkit-box-shadow: 10px 16px 100px #0f1ea7;
+          box-shadow: 10px 16px 100px #0f1ea7;
+}
+
+.subBox_main div {
+  width: 200px;
+  margin-top: 6px;
+  margin-left: 25px;
+}
+
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #25641f;
+  width: 100px;
+  border-bottom: 2px solid #25641f;
+  padding-bottom: 15px;
+  margin-bottom: 10px;
+}
+
+.title h1 {
+  font-weight: 400;
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: -10px;
+}
+
+.title h3 {
+  font-weight: normal;
+  font-size: 15px;
+  text-align: center;
+}
+
+.missions {
+  margin-top: 10px;
+}
+
+.missions div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.missions div p {
+  color: #060394;
+  margin-bottom: -6px;
+}
+
+.missions div .fa-circle {
+  color: #25641f;
+  margin-top: 17px;
+  width: 10px;
+}
+
+.button {
+  margin-top: 610px;
+  margin-left: -20px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */

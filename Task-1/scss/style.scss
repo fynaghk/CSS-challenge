@@ -1,0 +1,95 @@
+$main-color: #86c4ec;
+$addition_color: #3366ff;
+$text-color: rgb(37, 100, 31);
+$missions-color: rgb(6, 3, 148);
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+section{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.box{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 100px;
+  width: 500px;
+  height: 500px;
+  border-radius: 5px;
+  background: linear-gradient(to bottom, $main-color 0%, $addition_color 80%);
+}
+
+.subBox_main{
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  height: 350px;
+  width: 300px;
+  margin-top: 75px;
+  border-radius: 5px;
+  box-shadow: 10px 16px 100px rgb(15, 30, 167);
+
+  div{
+    width: 200px;
+    margin-top: 6px;
+    margin-left: 25px;
+  }
+}
+
+.title{
+  display: flex;
+  flex-direction: column;
+  color: $text-color;
+  width: 100px;
+  border-bottom: 2px solid $text-color;
+  padding-bottom: 15px;
+  margin-bottom: 10px;
+
+    h1{
+      font-weight: 400;
+      font-size: 26px;
+      text-align: center;
+      margin-bottom: -10px;
+  }
+
+    h3{
+      font-weight: normal;
+      font-size: 15px;
+      text-align: center;
+  }
+
+}
+
+
+.missions{
+  margin-top: 10px;
+
+      div{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+        p{
+          color: $missions-color;
+          margin-bottom: -6px;
+        }
+
+        .fa-circle{
+          color: $text-color;
+          margin-top: 17px;
+          width: 10px;
+        }
+    }
+}
+
+.button{
+  margin-top: 610px;
+  margin-left: -20px;
+  cursor: pointer;
+}
