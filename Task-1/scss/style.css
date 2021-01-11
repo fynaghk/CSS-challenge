@@ -53,9 +53,9 @@ section {
 }
 
 .subBox_main div {
-  width: 200px;
-  margin-top: 6px;
-  margin-left: 25px;
+  width: 240px;
+  margin-top: 7px;
+  margin-left: 15px;
 }
 
 .title {
@@ -87,10 +87,11 @@ section {
 }
 
 .missions {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
-.missions div {
+.missions ul li {
+  margin-left: -10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -101,22 +102,45 @@ section {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.missions div p {
+  margin-top: 10px;
   color: #060394;
-  margin-bottom: -6px;
 }
 
-.missions div .fa-circle {
-  color: #25641f;
-  margin-top: 17px;
-  width: 10px;
+.missions label {
+  cursor: pointer;
+  display: block;
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.missions span {
+  cursor: pointer;
+}
+
+#checkboxOneInput {
+  border-radius: 50%;
+}
+
+span .fa-check-circle {
+  display: none;
+}
+
+span:checked {
+  color: red;
 }
 
 .button {
   margin-top: 610px;
   margin-left: -20px;
-  cursor: pointer;
+}
+
+.button:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition-duration: 0.7s;
+          transition-duration: 0.7s;
 }
 /*# sourceMappingURL=style.css.map */

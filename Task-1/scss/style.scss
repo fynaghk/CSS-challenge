@@ -1,7 +1,13 @@
+// Variable Section  begins
+
 $main-color: #86c4ec;
 $addition_color: #3366ff;
 $text-color: rgb(37, 100, 31);
 $missions-color: rgb(6, 3, 148);
+
+// Variable Section ends
+
+//Div Structure begins
 
 body{
   margin: 0;
@@ -36,11 +42,15 @@ section{
   box-shadow: 10px 16px 100px rgb(15, 30, 167);
 
   div{
-    width: 200px;
-    margin-top: 6px;
-    margin-left: 25px;
+    width: 240px;
+    margin-top: 7px;
+    margin-left: 15px;
   }
 }
+
+// Div Structure ends
+
+//Title Section begins
 
 .title{
   display: flex;
@@ -66,30 +76,68 @@ section{
 
 }
 
+// Title Section ends
+
+// List Section begins
 
 .missions{
-  margin-top: 10px;
+  margin-top: 20px;
 
-      div{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
+      ul li{
+        margin-left: -10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 10px;
+        color: $missions-color;
+      }
 
-        p{
-          color: $missions-color;
-          margin-bottom: -6px;
-        }
+      label{
+        cursor: pointer;
+        display: block;
+        position: relative;
+        user-select: none;
+      }
 
-        .fa-circle{
-          color: $text-color;
-          margin-top: 17px;
-          width: 10px;
-        }
-    }
+
+      span{
+        cursor: pointer;
+      }
 }
+
+#checkboxOneInput{
+  border-radius: 50%;
+}
+
+span{
+
+  .fa-check-circle{
+    display: none;
+  }
+
+  .fa-circle{
+
+  }
+
+}
+
+span:checked{
+  color: red;
+}
+
+// List Section ends
+
+
+// Button Section begins
 
 .button{
   margin-top: 610px;
   margin-left: -20px;
-  cursor: pointer;
 }
+
+.button:hover{
+  transform: rotate(360deg);
+  transition-duration: 0.7s;
+}
+
+// Button Section ends
