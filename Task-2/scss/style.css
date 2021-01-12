@@ -1,1 +1,168 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main_box {
+  width: 450px;
+  height: 450px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #163b0c;
+  margin-top: 100px;
+}
+
+.carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.box_1 {
+  display: block;
+  width: 130px;
+  height: 130px;
+  background-color: white;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.box_1 .header {
+  width: 130px;
+  height: 40px;
+  background-color: #FF9800;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.box_1 .body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px;
+}
+
+.box_1 .body div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 4px;
+  width: 50px;
+  height: 3px;
+  border-radius: 10px;
+  background-color: grey;
+}
+
+.box_2 {
+  display: block;
+  width: 130px;
+  height: 130px;
+  background-color: white;
+  margin: 5px;
+  border-radius: 5px;
+  margin-top: 50px;
+}
+
+.box_2 .header {
+  width: 130px;
+  height: 40px;
+  background-color: #FF9800;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.box_2 .body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px;
+}
+
+.box_2 .body div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 4px;
+  width: 50px;
+  height: 3px;
+  border-radius: 10px;
+  background-color: grey;
+}
+
+.box_3 {
+  display: block;
+  width: 130px;
+  height: 130px;
+  background-color: white;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.box_3 .header {
+  width: 130px;
+  height: 40px;
+  background-color: #FF9800;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.box_3 .body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px;
+}
+
+.box_3 .body div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 4px;
+  width: 50px;
+  height: 3px;
+  border-radius: 10px;
+  background-color: grey;
+}
+/*# sourceMappingURL=style.css.map */
