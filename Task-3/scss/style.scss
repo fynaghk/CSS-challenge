@@ -1,0 +1,55 @@
+$color-main: #DE4738;
+$color-background: #e9a097;
+
+*{
+  margin: 0;
+}
+
+input{
+  background-color: $color-main;
+  margin-left: 5px;
+  padding: 0px;
+
+  div{
+    width: 10px;
+    margin-bottom: -10px;
+  }
+}
+
+section{
+  display: flex;
+  margin-top: 150px;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  div{
+    background-color: $color-background;
+    box-shadow: 10px 10px 10px black;
+  }
+}
+
+.box{
+  display: flex;
+  flex-wrap: wrap;
+  width: 180px;
+  justify-content: center;
+
+}
+
+
+// Button Section starts
+
+.btn{
+  position: absolute;
+  margin-top: 185px;
+  margin-left: 170px;
+  background-color: none !important;
+}
+
+.btn:hover{
+  transform: rotate(360deg);
+  transition-duration: 0.7s;
+}
+
+
+// Button Section ends

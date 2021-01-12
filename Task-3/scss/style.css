@@ -1,1 +1,59 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+}
+
+input {
+  background-color: #DE4738;
+  margin-left: 5px;
+  padding: 0px;
+}
+
+input div {
+  width: 10px;
+  margin-bottom: -10px;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 150px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section div {
+  background-color: #e9a097;
+  -webkit-box-shadow: 10px 10px 10px black;
+          box-shadow: 10px 10px 10px black;
+}
+
+.box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 180px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.btn {
+  position: absolute;
+  margin-top: 185px;
+  margin-left: 170px;
+  background-color: none !important;
+}
+
+.btn:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition-duration: 0.7s;
+          transition-duration: 0.7s;
+}
+/*# sourceMappingURL=style.css.map */
