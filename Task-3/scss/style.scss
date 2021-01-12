@@ -36,7 +36,6 @@ section{
 
 input{
   position: relative;
-  cursor: pointer;
   margin: 4px;
 
     &::before{
@@ -50,6 +49,10 @@ input{
       margin-left: 2px;
       margin-top: 2px;
       background-color: $color-main;
+
+      // &:hover{
+      //   background-color: #ec624f;
+      // }
   }
 
     &:checked::after{
