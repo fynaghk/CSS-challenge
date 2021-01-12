@@ -1,17 +1,21 @@
-$box_color: rgb(22, 59, 12);
+$box_color: rgb(31, 85, 17);
 $title_color: #FF9800;
 
+// Mixin Section begins
+
 @mixin box{
-  display: block;
-  width: 130px;
+  position: absolute;
+  width: 150px;
   height: 130px;
-  background-color: white;
-  margin: 5px;
+  left: 150px;
+  background: #fff;
+  box-shadow: 2px 2px 25px rgb(44, 44, 44);
   border-radius: 5px;
 
   .header{
-    width: 130px;
+    width: 150px;
     height: 40px;
+    position:relative;
     background-color: $title_color;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -20,19 +24,105 @@ $title_color: #FF9800;
   .body{
     display: flex;
     flex-direction: column;
-    margin: 10px;
+    margin: 15px;
 
     div{
       display: flex;
       flex-direction: column;
       margin: 4px;
-      width: 50px;
       height: 3px;
       border-radius: 10px;
-      background-color: grey;
+      background-color: #e4e4e4;
     }
   }
 }
+
+// Mixin Section ends
+
+// Keyframes Section begins
+
+@keyframes carousel3 {
+  100%{
+    transform: translate3d(0, 0, 0);
+  }
+
+  66%{
+    transform: translate3d(-145px, 0, -45px);
+  }
+
+  33%{
+    transform: translate3d(145px, 0, -45px);
+}
+
+  0%{
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes carousel2 {
+  100%{
+    transform: translate3d(145px, 0, -45px);
+  }
+
+  66%{
+    transform: translate3d(0, 0, 0);
+  }
+
+  33%{
+    transform: translate3d(-145px, 0, -45px);
+}
+
+  0%{
+    transform: translate3d(145px, 0, -45px);
+  }
+}
+
+
+@keyframes carousel1 {
+  0%{
+    transform: translate3d(-145px, 0, -45px);
+  }
+
+  66%{
+    transform: translate3d(145px, 0, -45px);
+  }
+
+  33%{
+    transform: translate3d(0, 0, 0);
+}
+
+  100%{
+    transform: translate3d(-145px, 0, -45px);
+  }
+}
+
+// Keyframes Section ends
+
+// Size of Rows Section begins
+
+.first{
+  width: 80px;
+}
+
+.second{
+  width: 60px;
+}
+
+.third{
+  width: 85px;
+}
+
+.fourth{
+  width: 30px;
+}
+
+.fifth{
+  width: 80px;
+}
+
+// Size of Rows Section ends
+
+// Carousel Section begins
 
 body{
   margin: 0;
@@ -55,19 +145,45 @@ section{
   margin-top: 100px;
 }
 
-.carousel{
+.carousel-container{
   display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: space-between;
+  height: 150px;
+  width: 450px;
+  margin-top: 150px;
+  transform: perspective(60px);
+  transform-style: preserve-3d;
 }
 
 .box_1{
+  animation: carousel1 5s infinite;
   @include box;
 }
 
 .box_2{
   @include box;
-  margin-top: 50px
+  animation: carousel2 5s infinite;
 }
 
 .box_3{
+  animation: carousel3 5s infinite;
   @include box;
 }
+
+// Carousel Section ends
+
+// Button Section begins
+
+.btn{
+  margin-top: 555px;
+  margin-left: -20px;
+}
+
+.btn:hover{
+  transform: rotate(360deg);
+  transition-duration: 0.7s;
+}
+
+// Button Section ends
