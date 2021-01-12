@@ -155,6 +155,10 @@ input{
   transition-duration: 0.5s;
 }
 
+label:checked{
+  color: #3366ff;
+}
+
 // List Section ends
 
 // Button Section begins

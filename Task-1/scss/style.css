@@ -172,6 +172,10 @@ input:checked::after {
           transition-duration: 0.5s;
 }
 
+label:checked {
+  color: #3366ff;
+}
+
 .button {
   margin-top: 610px;
   margin-left: -20px;
