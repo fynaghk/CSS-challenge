@@ -1,19 +1,18 @@
 * {
   margin: 0;
-}
-
-input {
-  background-color: #DE4738;
-  margin-left: 5px;
-  padding: 0px;
-}
-
-input div {
-  width: 10px;
-  margin-bottom: -10px;
+  padding: 0;
 }
 
 section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.box_main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -25,10 +24,11 @@ section {
           justify-content: center;
 }
 
-section div {
-  background-color: #e9a097;
-  -webkit-box-shadow: 10px 10px 10px black;
-          box-shadow: 10px 10px 10px black;
+.box {
+  display: block;
+  background-color: #ec624f;
+  -webkit-box-shadow: 2px 2px 20px black;
+          box-shadow: 2px 2px 20px black;
 }
 
 .box {
@@ -37,17 +37,66 @@ section div {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 180px;
+  width: 210px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
+input {
+  position: relative;
+  cursor: pointer;
+  margin: 4px;
+}
+
+input::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: -5px;
+  left: -5px;
+  margin-left: 2px;
+  margin-top: 2px;
+  background-color: #DE4738;
+}
+
+input:checked::after {
+  content: "";
+  display: block;
+  background-color: white;
+  width: 22px;
+  height: 22px;
+  top: -6px;
+  left: -6px;
+  margin: 2px;
+  position: absolute;
+}
+
+#pixel34::before, #pixel37::before, #pixel24::before, #pixel27::before, #pixel68::before, #pixel74::before, #pixel68::before, #pixel75::before, #pixel76::before, #pixel77::before, #pixel63::before {
+  background-color: white;
+  width: 22px;
+  height: 22px;
+  top: -6px;
+  left: -6px;
+  margin: 2px;
+  position: absolute;
+}
+
+#pixel34:checked::after, #pixel37:checked::after, #pixel24:checked::after, #pixel27:checked::after, #pixel68:checked::after, #pixel74:checked::after, #pixel68:checked::after, #pixel75:checked::after, #pixel76:checked::after, #pixel77:checked::after, #pixel63:checked::after {
+  background-color: #DE4738;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ec624f;
+  top: -6px;
+  left: -6px;
+}
+
 .btn {
   position: absolute;
-  margin-top: 185px;
-  margin-left: 170px;
-  background-color: none !important;
+  margin-top: 220px;
+  margin-left: 180px;
 }
 
 .btn:hover {
