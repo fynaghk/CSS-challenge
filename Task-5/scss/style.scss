@@ -1,0 +1,242 @@
+$box_color: #dbae82;
+$text_color: #813b1a;
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+// Box Design Section starts
+
+section{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.base{
+  background: linear-gradient(to bottom, #993300 0%, #ff9933 100%);
+  width: 550px;
+  height: 550px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px black;
+  display: flex;
+  justify-content: center;
+
+}
+
+.subDiv{
+  margin-top: 50px;
+  width: 450px;
+  height: 450px;
+  border-radius: 3px;
+  background-color: white;
+  box-shadow: 5px 5px 20px black;
+  display: flex;
+  justify-content: space-around;
+}
+
+// Box Design Section ends
+
+// Image Section starts
+
+figure{
+  width: 150px;
+  cursor: pointer;
+  margin-left: 50px;
+  margin-top: 10px;
+
+    &::before{
+      content: " ";
+      width: 150px;
+      height: 150px;
+      margin-top: 17px;
+      margin-left: 15px;
+      position: absolute;
+      display: block;
+      border: 3px solid $text-color;
+      border-width: 0px 0px 3px 3px;
+      transform: rotate(45deg);
+      border-radius: 50%;
+      background-color: none;
+      cursor: pointer;
+    }
+
+    &::after{
+      content: " ";
+      width: 170px;
+      height: 170px;
+      margin-top: -150px;
+      margin-left: 7px;
+      position: absolute;
+      display: block;
+      border: solid $text-color;
+      border-width: 3px 3px 0px 0px;
+      transform: rotate(45deg);
+      border-radius: 50%;
+      background-color: none;
+    }
+
+    img{
+      width: 150px;
+      border-radius: 50%;
+      border: 2px solid white;
+      margin-left: 15px;
+      cursor: pointer;
+    }
+
+// Hover Section starts
+
+    &:hover{
+      &::before{
+      transform: rotate(405deg);
+      transition-duration: 1s;
+    }
+
+    &::after{
+      transform: rotate(-315deg);
+      transition-duration: 1s;
+    }
+
+      &::before{
+      transform: rotate(405deg);
+      transition-duration: 1s;
+    }
+
+    &::after{
+      transform: rotate(-315deg);
+      transition-duration: 1s;
+    }
+  }
+
+  // Hover Section ends
+
+  // Not Hover Section starts
+
+  &:not(:hover){
+    &::before{
+      transform: rotate(45deg);
+      transition-duration: 1s;
+    }
+
+    &::after{
+      transform: rotate(45deg);
+      transition-duration: 1s;
+    }
+
+      &::before{
+      transform: rotate(45deg);
+      transition-duration: 1s;
+    }
+
+    &::after{
+      transform: rotate(45deg);
+      transition-duration: 1s;
+    }
+  }
+}
+
+// Not Hover Section ends
+
+// Image  Section ends
+
+// Title Section starts
+
+.title{
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 50px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 75px;
+
+  h1{
+    color: $text_color;
+  }
+
+  h3{
+    margin-left: 23px;
+    font-weight: normal;
+    color: rgb(109, 109, 109);
+  }
+}
+
+// Title Section ends
+
+// About Section starts
+
+.about{
+  display: flex;
+  flex-direction: column;
+  margin-left: 1px;
+
+  .box{
+    width: 170px;
+    height: 200px;
+    background-color: $box_color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1px;
+    cursor: pointer;
+
+    h1{
+      text-align: center;
+      color: $text_color;
+    }
+
+    h3{
+      text-align: center;
+      font-weight: normal;
+      color: $text_color;
+    }
+
+    &:hover{
+      background-color: #faae62;
+    }
+  }
+}
+
+// About Section ends
+
+// Buttons Section starts
+
+.buttons{
+  display: flex;
+  flex-direction: column;
+  margin-left: 60px;
+
+  button{
+    margin: 7px;
+    width: 150px;
+    height: 40px;
+    border: 2px solid $text_color;
+    border-radius: 30px;
+    color: $text_color;
+    font-size: 15px;
+    font-weight: bolder;
+
+    &:hover, &:focus, &:active {
+      outline: none;
+      background-color: $text_color;
+      color: white;
+    }
+  }
+}
+
+// Button Section ends
+
+// Refresh Section starts
+
+.btn{
+  margin-top: 560px;
+  margin-left: -10px;
+}
+
+.btn:hover{
+  transform: rotate(360deg);
+  transition-duration: 0.7s;
+}
+
+// Refresh Section ends
