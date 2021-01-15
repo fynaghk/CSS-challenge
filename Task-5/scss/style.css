@@ -165,10 +165,11 @@ figure:not(:hover)::after {
 
 .title h1 {
   color: #813b1a;
+  margin-left: -12px;
 }
 
 .title h3 {
-  margin-left: 23px;
+  margin-left: 33px;
   font-weight: normal;
   color: #6d6d6d;
 }

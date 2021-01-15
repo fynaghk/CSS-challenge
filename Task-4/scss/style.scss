@@ -7,24 +7,6 @@ $third_color: #1abc9c;
   padding: 0;
 }
 
-@keyframes slider{
-  0%{
-    background-color: $first_color;
-  }
-
-  100%{
-    background-color: $second_color;
-  }
-
-  33%{
-    background-color: $third_color;
-  }
-
-  66%{
-    background-color: $first_color;
-  }
-}
-
 section{
   display: flex;
   flex-direction: row;
@@ -39,16 +21,6 @@ section{
   width: 400px;
 }
 
-.main-1{
-  width: 400px;
-  height: 400px;
-  background-color: $second_color;
-  border-radius: 5px;
-  margin-top: 100px;
-  box-shadow: 1px 1px 10px black;
-  position: relative;
-}
-
 .main-2{
   width: 400px;
   height: 400px;
@@ -59,17 +31,6 @@ section{
   justify-content: center;
   box-shadow: 1px 1px 10px black;
 }
-
-.main-3{
-  width: 400px;
-  height: 400px;
-  background-color: $third_color;
-  border-radius: 5px;
-  margin-top: 100px;
-  box-shadow: 1px 1px 10px black;
-  position: relative;
-}
-
 
 input{
   position: relative;
