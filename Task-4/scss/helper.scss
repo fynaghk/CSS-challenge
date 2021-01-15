@@ -1,0 +1,90 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.box{
+  position: absolute;
+  height: 500px;
+  width: 500px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px 10px rgba(0,0,0, 0.25);
+  border-radius: 5%;
+  overflow: hidden;
+}
+
+.slider{
+  position: absolute;
+  width: 250px;
+  height: 60px;
+  top: 220px;
+  left: 125px;
+}
+
+input[type="radio"]{
+  display: none;
+}
+
+.slider-label{
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  cursor: pointer;
+}
+
+#c2{
+  left: 95px;
+}
+
+#c3{
+  left: 190px;
+}
+
+.active{
+  z-index: 2;
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  box-sizing: border-box;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: #fff;
+  transition: transform .5s ease-out;
+}
+
+#backEffect{
+  position: absolute;
+  top: -220px;
+  left: -125px;
+  height: 500px;
+  width: 500px;
+  background: #27581b;
+  border-left: solid 500px #013e5a;
+  border-right: solid 500px #cf8907;
+  transition: transform .5s ease-in;
+}
+
+#slider-radio2:checked ~ .active{
+  transform: translateX(95px);
+}
+
+#slider-radio3:checked ~ .active{
+  transform: translateX(190px);
+}
+
+
+#slider-radio2:checked ~ #backEffect{
+  transform: translateX(-500px);
+}
+
+#slider-radio3:checked ~ #backEffect{
+  transform: translateX(-1000px);
+}

@@ -2,82 +2,109 @@ $first_color: #3498db;
 $second_color: #9b59b6;
 $third_color: #1abc9c;
 
+@mixin label{
+  width: 40px;
+  height: 40px;
+  border: 2px solid white;
+  margin: 10px;
+  position: absolute;
+  border-radius: 50%;
+  z-index: 1;
+  cursor: pointer;
+}
+
 *{
   margin: 0;
   padding: 0;
 }
 
-section{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.base{
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  overflow: hidden;
-  width: 400px;
-}
-
-.main-2{
+.box{
+  top: 100px;
+  left: 500px;
   width: 400px;
   height: 400px;
-  background-color: $first_color;
   border-radius: 5px;
-  margin-top: 100px;
+  z-index: 10;
+  position: absolute;
+  background-color: antiquewhite;
+  overflow: hidden;
+  box-shadow: 1px 2px 10px black;
+}
+
+.main_box{
+  margin-left: -400px;
+  background-color: $second_color;
+  border-left: 400px solid $first_color;
+  border-right: 400px solid $third_color;
+  position: absolute;
+  width: 400px;
+  height: 400px;
+}
+
+.buttons{
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  box-shadow: 1px 1px 10px black;
+  margin-top: 160px;
+  margin-left: 200px;
+  position: absolute;
+}
+
+.circle{
+  left: 614px;
+  top: 276px;
+  z-index: 11;
+  position: absolute;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  background: red;
+  transition: transform 0.7s ease-out;
+}
+
+#first_label{
+  @include label;
+  margin-left: -130px;
+}
+
+#second_label{
+  @include label;
+}
+
+#third_label{
+  @include label;
+  margin-left: 150px;
 }
 
 input{
-  position: relative;
-  cursor: pointer;
-  margin: 25px;
-  margin-top: 180px;
-
-    &::before{
-      content: "";
-      display: block;
-      position: absolute;
-      width: 10px;
-      height: 10px;
-      left: -20px;
-      top: -20px;
-      padding: 20px;
-      border: 2px solid white;
-      border-radius: 50%;
-      background-color: $first_color;
-  }
-
-    &:checked::after {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 10px;
-      height: 10px;
-      cursor: default;
-      left: -15px;
-      appearance: radio;
-      top: -15px;
-      padding: 17px;
-      border-radius: 50%;
-      background-color: white;
-  }
+  display: none;
 }
 
-// Checkbox Section starts
+// Checked Section starts
 
+#second_input:checked ~ .circle{
+  transform: translateX(200px);
+}
 
-// Checkbox  Section ends
+#third_input:checked ~ .circle{
+  transform: translateX(90px);
+}
+
+#second_input:checked ~ .main_box{
+  transform: translateX(-400px);
+}
+
+#third_input:checked ~ .main_box{
+  transform: translateX(-400px);
+}
+// Checked Section ends
 
 // Button Section starts
 
 .btn{
-  margin-top: 510px;
-  margin-left: -10px;
+  margin-top: 500px;
+  margin-left: 900px;
+  position: absolute;
 }
 
 .btn:hover{
@@ -85,4 +112,4 @@ input{
   transition-duration: 0.7s;
 }
 
-// Button Section ends
+// Button section ends

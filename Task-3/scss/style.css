@@ -46,6 +46,7 @@ section {
 input {
   position: relative;
   margin: 4px;
+  cursor: pointer;
 }
 
 input::before {
