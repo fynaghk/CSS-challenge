@@ -4,12 +4,14 @@
 }
 
 .box {
-  top: 100px;
-  left: 500px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   width: 400px;
   height: 400px;
   border-radius: 5px;
-  z-index: 10;
+  z-index: 2;
   position: absolute;
   background-color: antiquewhite;
   overflow: hidden;
@@ -18,40 +20,39 @@
 }
 
 .main_box {
-  margin-left: -400px;
+  margin-top: -150px;
+  margin-left: -210px;
   background-color: #9b59b6;
   border-left: 400px solid #3498db;
   border-right: 400px solid #1abc9c;
   position: absolute;
   width: 400px;
   height: 400px;
+  -webkit-transition: -webkit-transform 0.7s ease-out;
+  transition: -webkit-transform 0.7s ease-out;
+  transition: transform 0.7s ease-out;
+  transition: transform 0.7s ease-out, -webkit-transform 0.7s ease-out;
 }
 
 .buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 160px;
-  margin-left: 200px;
+  width: 200px;
+  height: 50px;
   position: absolute;
+  top: 150px;
+  left: 210px;
 }
 
 .circle {
-  left: 614px;
-  top: 276px;
-  z-index: 11;
+  top: 50%;
+  left: 50%;
+  margin-top: -9px;
+  margin-left: -194px;
+  z-index: 2;
   position: absolute;
   height: 32px;
   width: 32px;
   border-radius: 50%;
-  background: red;
+  background: white;
   -webkit-transition: -webkit-transform 0.7s ease-out;
   transition: -webkit-transform 0.7s ease-out;
   transition: transform 0.7s ease-out;
@@ -63,11 +64,12 @@
   height: 40px;
   border: 2px solid white;
   margin: 10px;
+  margin-left: -30px;
   position: absolute;
   border-radius: 50%;
   z-index: 1;
   cursor: pointer;
-  margin-left: -130px;
+  margin-left: -100px;
 }
 
 #second_label {
@@ -75,6 +77,7 @@
   height: 40px;
   border: 2px solid white;
   margin: 10px;
+  margin-left: -30px;
   position: absolute;
   border-radius: 50%;
   z-index: 1;
@@ -86,11 +89,12 @@
   height: 40px;
   border: 2px solid white;
   margin: 10px;
+  margin-left: -30px;
   position: absolute;
   border-radius: 50%;
   z-index: 1;
   cursor: pointer;
-  margin-left: 150px;
+  margin-left: 40px;
 }
 
 input {
@@ -98,13 +102,13 @@ input {
 }
 
 #second_input:checked ~ .circle {
-  -webkit-transform: translateX(200px);
-          transform: translateX(200px);
+  -webkit-transform: translateX(70px);
+          transform: translateX(70px);
 }
 
 #third_input:checked ~ .circle {
-  -webkit-transform: translateX(90px);
-          transform: translateX(90px);
+  -webkit-transform: translateX(140px);
+          transform: translateX(140px);
 }
 
 #second_input:checked ~ .main_box {
@@ -113,20 +117,7 @@ input {
 }
 
 #third_input:checked ~ .main_box {
-  -webkit-transform: translateX(-400px);
-          transform: translateX(-400px);
-}
-
-.btn {
-  margin-top: 500px;
-  margin-left: 900px;
-  position: absolute;
-}
-
-.btn:hover {
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-  -webkit-transition-duration: 0.7s;
-          transition-duration: 0.7s;
+  -webkit-transform: translateX(-800px);
+          transform: translateX(-800px);
 }
 /*# sourceMappingURL=style.css.map */
