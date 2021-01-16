@@ -49,6 +49,18 @@ input {
   cursor: pointer;
 }
 
+input:checked::after {
+  content: "";
+  display: block;
+  background-color: white;
+  width: 22px;
+  height: 22px;
+  top: -6px;
+  left: -6px;
+  margin: 2px;
+  position: absolute;
+}
+
 input::before {
   content: "";
   display: block;
@@ -62,16 +74,8 @@ input::before {
   background-color: #DE4738;
 }
 
-input:checked::after {
-  content: "";
-  display: block;
-  background-color: white;
-  width: 22px;
-  height: 22px;
-  top: -6px;
-  left: -6px;
-  margin: 2px;
-  position: absolute;
+input:hover::before {
+  background-color: #ff857a;
 }
 
 #pixel34::before, #pixel37::before, #pixel24::before, #pixel27::before, #pixel68::before, #pixel74::before, #pixel68::before, #pixel75::before, #pixel76::before, #pixel77::before, #pixel63::before {
@@ -91,6 +95,10 @@ input:checked::after {
   border: 1px solid #ec624f;
   top: -6px;
   left: -6px;
+}
+
+#pixel34:hover::after, #pixel37:hover::after, #pixel24:hover::after, #pixel27:hover::after, #pixel68:hover::after, #pixel74:hover::after, #pixel68:hover::after, #pixel75:hover::after, #pixel76:hover::after, #pixel77:hover::after, #pixel63:hover::after {
+  background-color: #ff857a;
 }
 
 .btn {
